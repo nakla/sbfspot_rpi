@@ -6,5 +6,5 @@ chmod +x manifest-tool
 
 
 
-./manifest-tool push from-spec multi-arch-manifest.yaml
+./manifest-tool push from-spec multi-arch-manifest.yml
 
