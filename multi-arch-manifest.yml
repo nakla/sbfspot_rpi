@@ -2,7 +2,7 @@ image: nakla/sbfspot_rpi:latest
 
 manifests:
 
-  - image: nakla/sbfspot_rpi:latest
+  - image: nakla/sbfspot_rpi:latest-amd64
 
     platform:
 
