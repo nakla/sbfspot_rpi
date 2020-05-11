@@ -44,7 +44,7 @@ RUN apk --no-cache add mariadb-client
 ##############################################################################################################
 
 # runtime container
-FROM /alpine:latest
+FROM alpine:latest
 
 ARG user=sbfspot
 ARG group=sbfspot
