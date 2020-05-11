@@ -1,5 +1,5 @@
 # buildtime container
-FROM arm32v6/alpine:latest AS builder
+FROM alpine:latest AS builder
 
 ARG sbfspot_home=/usr/local/bin/sbfspot.3
 
@@ -44,7 +44,7 @@ RUN apk --no-cache add mariadb-client
 ##############################################################################################################
 
 # runtime container
-FROM arm32v6/alpine:latest
+FROM /alpine:latest
 
 ARG user=sbfspot
 ARG group=sbfspot
