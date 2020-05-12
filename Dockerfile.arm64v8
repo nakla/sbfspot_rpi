@@ -58,6 +58,9 @@ RUN apk --no-cache add mariadb-client
 # runtime container
 FROM arm64v8/alpine:latest
 
+# Add QEMU
+COPY --from=qemu qemu-aarch64-static /usr/bin
+
 ARG user=sbfspot
 ARG group=sbfspot
 ARG uid=5000
