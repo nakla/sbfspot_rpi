@@ -11,7 +11,7 @@ RUN apk add curl && curl -L ${QEMU_URL} | tar zxvf - -C . --strip-components 1
 FROM arm32v6/alpine:latest AS builder
 
 # Add QEMU
-COPY --from=builder qemu-arm-static /usr/bin
+COPY --from=qemu qemu-arm-static /usr/bin
 
 ARG sbfspot_home=/usr/local/bin/sbfspot.3
 
